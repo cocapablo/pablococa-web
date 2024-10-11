@@ -2,32 +2,50 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { TwitterFollowCard } from './components/TwitterCard/TwitterFollowCard.jsx'
+import { TicTacToe } from './components/TicTacToe/TicTacToe.jsx'
+import { BolaEnMouse } from './components/BolaEnMouse/BolaEnMouse.jsx'
+
+
+const users = [
+  {
+    userName: 'midudev',
+    name: 'Miguel Ángel Durán',
+    isFollowing: true
+  },
+  {
+    userName: 'pabloandrescoca',
+    name: 'Pablo Andrés Coca',
+    isFollowing: false
+  }
+];
 
 function App() {
   const [count, setCount] = useState(0)
+  const formatUserName = (userName) => `@${userName}`;
+
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      
+        <h1>Hola que tal</h1>
+        
+        <div className='lista-twitters-cards'>
+        {
+          users.map(user => {
+            return (
+            <TwitterFollowCard 
+            key={user.userName} userName={user.userName} name={user.name} formatUserName={formatUserName} initialIsFollowing={user.isFollowing}/> 
+            ) 
+          })
+        }
+        </div>
+
+        <TicTacToe> </TicTacToe>
+
+        <BolaEnMouse></BolaEnMouse>
+
     </>
   )
 }
