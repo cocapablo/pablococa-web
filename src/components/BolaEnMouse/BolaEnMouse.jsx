@@ -22,11 +22,20 @@ export function BolaEnMouse() {
         
         //CleanUp
         //Esto se ejecuta en el dismounting de la componente y cada vez que cambie la dependencia
-        //antes de ejecutar el efecto de nuevo
+        //ANTES de ejecutar el efecto de nuevo
         return () => {
             window.removeEventListener("pointermove", handleMove);
         }
         
+    }, [enabled])
+
+    useEffect(() => {
+        //Desaparece el puntero del mousse al activar el seguimiento
+        document.body.classList.toggle("no-cursor", enabled);
+
+        return () => {
+            document.body.classList.remove("no-cursor");    
+        }
     }, [enabled])
 
     return (
