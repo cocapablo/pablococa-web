@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+//import './App.css'
 import { TwitterFollowCard } from './components/TwitterCard/TwitterFollowCard.jsx'
 import { TicTacToe } from './components/TicTacToe/TicTacToe.jsx'
 import { BolaEnMouse } from './components/BolaEnMouse/BolaEnMouse.jsx'
 import Cats from './components/Cats/Cats.jsx'
+import BuscadorDePeliculas from './components/BuscadorDePeliculas/BuscadorDePeliculas.jsx'
 
 
 const users = [
@@ -31,7 +32,8 @@ function App() {
     <>
       
         <h1>Hola que tal</h1>
-        <Cats></Cats>
+        <BuscadorDePeliculas></BuscadorDePeliculas>
+        {/* <Cats></Cats>
                 
         <div className='lista-twitters-cards'>
         {
@@ -46,7 +48,7 @@ function App() {
 
         <TicTacToe> </TicTacToe>
 
-        <BolaEnMouse></BolaEnMouse>
+        <BolaEnMouse></BolaEnMouse> */}
 
     </>
   )
