@@ -1,14 +1,14 @@
 import { searchMovies } from "../services/movies.js";
-import { useState, useRef } from "react";
+import { useState, useRef, useMemo, useCallback } from "react";
 
-export function useMovies({search}) {
+export function useMovies({search, sort}) {
     const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const previousSearch = useRef(search);
 
     
-    const getMovies = async () => {
+    const getMovies = useCallback(async ({search}) => {
         if (search === previousSearch.current) return; //Si la b{usqueda es igual a la anterior no la hago de nuevo
         
         try {
@@ -25,12 +25,27 @@ export function useMovies({search}) {
         finally {
             setLoading(false);
         }
-        
+    }, []);
 
-    }
+    
+    const sortedMovies = useMemo(() => {
+        let  validMovies;
+
+        console.log("Ordenando movies");
+
+        validMovies = sort ? [...movies].sort((a, b) => a.title.localeCompare(b.title))
+        :
+        movies;
+
+        return validMovies;
+    }, [sort, movies]);
+    
+
+    
+    
 
     return({
-        movies,
+        movies: sortedMovies,
         loading,
         error, 
         getMovies
