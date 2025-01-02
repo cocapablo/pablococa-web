@@ -7,6 +7,8 @@ import { TicTacToe } from './components/TicTacToe/TicTacToe.jsx'
 import { BolaEnMouse } from './components/BolaEnMouse/BolaEnMouse.jsx'
 import Cats from './components/Cats/Cats.jsx'
 import BuscadorDePeliculas from './components/BuscadorDePeliculas/BuscadorDePeliculas.jsx'
+import ShoppingCart from './components/ShoppingCart/ShoppingCart.jsx'
+import { FiltersProvider } from './components/ShoppingCart/contexts/filters.jsx'
 
 
 const users = [
@@ -32,7 +34,12 @@ function App() {
     <>
       
         <h1>Hola que tal</h1>
-        <BuscadorDePeliculas></BuscadorDePeliculas>
+        <FiltersProvider>
+          <ShoppingCart>Bienvenido al Shopping Cart
+            <p>A reir y llorar</p>
+          </ShoppingCart>
+        </FiltersProvider>
+        {/* <BuscadorDePeliculas></BuscadorDePeliculas> */}
         {/* <Cats></Cats>
                 
         <div className='lista-twitters-cards'>
