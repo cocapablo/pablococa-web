@@ -15,7 +15,7 @@ export function TwitterFollowCard({formatUserName, userName, name, initialIsFoll
   return (
     <article className='tw-followCard'>
         <header className='tw-followCard-header'>
-            <img className='tw-followCard-avatar' src={`https://unavatar.io/${userName}`} alt="Wl avatar de Midu" />
+            <img className='tw-followCard-avatar' src={`https://unavatar.io/${userName}`} alt="El avatar de Midu" />
             <div className='tw-followCard-info'>
                 <strong>{name}</strong>
                 <span className='tw-followCard-infoUserName'>{formatUserName(userName)}</span>

@@ -1,0 +1,59 @@
+{
+    "status": "success",
+    "payload": {
+        "expectativas": [
+            {
+                "id": 1,
+                "titulo": "Información posta",
+                "descripcion": "Todas mis actividades artísticas estarán en esta web. Encontrarás información sobre mis proyectos, mis trabajos y mis expectativas. Además, podrás contactarme para cualquier consulta o propuesta de trabajo."
+            },
+            {
+                "id": 2,
+                "titulo": "Videos",
+                "descripcion": "Mirá mi selección personal de videos. También podés entrar a mi Canal de YouTube y ver mucho más contenido. No te olvides de suscribirte para recibir notificaciones de nuevos videos."
+            },
+            {
+                "id": 3,
+                "titulo": "Streaming",
+                "descripcion": "Toda mis programas por streaming en Twitch, YouTube, Facebook e Instagram. No te pierdas mis transmisiones en vivo y disfrutá de un contenido exclusivo. ¡Suscribite para recibir notificaciones de nuevos streams!"
+            },
+            {
+                "id": 4,
+                "titulo": "Malas lenguas",
+                "descripcion": "Los chimentos más escandalosos sobre mí están acá. Vos decidí si son falsos o no. ¡No te pierdas ni uno!"
+            },
+            {
+                "id": 5,
+                "titulo": "Fotos",
+                "descripcion": "Mirá mi galería de fotos. Encontrarás fotos de mis proyectos, mis trabajos y mis expectativas. Además, podrás descargarlas para tenerlas siempre con vos."
+            },
+            {
+                "id": 6,
+                "titulo": "Contacto",
+                "descripcion": "¿Querés contactarme? ¡Hacelo! Estoy disponible para cualquier consulta o propuesta de trabajo. ¡No dudes en escribirme!"
+            },
+            {
+                "id": 7,
+                "titulo": "Redes",
+                "descripcion": "Seguime en mis redes sociales. Encontrarás información sobre mis proyectos, mis trabajos y mis expectativas. Además, podrás contactarme para cualquier consulta o propuesta de trabajo."
+            },
+            {
+                "id": 8,
+                "titulo": "Momentos gloriosos",
+                "descripcion": "Una recopilación de historias en dónde la autoestima de Pablo Coca llegó a límites obscenos"
+            },
+            {
+                "id": 9,
+                "titulo": "Momentos lamentables",
+                "descripcion": "Una recopilación de historias en dónde la imágen de Pablo Coca se fué por el inodoro"
+            },
+            {
+                "id": 10,
+                "titulo": "Momentos de mierda",
+                "descripcion": "Una recopilación de historias en dónde la vida de Pablo Coca se fué al carajo"
+            }
+        ]
+    }
+    
+    
+}

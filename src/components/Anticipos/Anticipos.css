@@ -1,0 +1,77 @@
+
+/* Clases anticipo */
+/* Mobile */
+.anticipo-panel {
+    display: flex;
+    flex-direction: column; }
+    .anticipo-panel .anticipo {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 2%;
+      box-shadow: 5px 10px 5px #3D405B;
+      text-align: center;
+      background-color: #F2CC8F;
+      color: black; }
+      .anticipo-panel .anticipo .anticipo-titulo {
+        font-size: 2rem;
+        color: black; }
+      .anticipo-panel .anticipo .anticipo-descripcion {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 1rem;
+        color: black; }
+      .anticipo-panel .anticipo .anticipo-boton {
+        display: inline-block;
+        margin: auto;
+        padding: 0.3rem;
+        background: linear-gradient(#c5e7d6, #81B29A);
+        color: white;
+        font-size: 1.1rem;
+        border: 2px solid black;
+        border-radius: 5%; }
+      .anticipo-panel .anticipo .anticipo-boton:hover {
+        transform: scale(1.1, 1.1); }
+
+        .anticipo-panel .anticipo .anticipo-boton a {
+            text-decoration: none;
+            color: black; }
+          
+          /* tamaño de las imagenes*
+          Les coloco un porcentaje para evitar el scroll horizontal
+          */
+          .anticipo-panel .anticipo .anticipo-vista img {
+            max-width: 90%; }
+          
+          /* tamaño de los iframes*
+          Les coloco un porcentaje para evitar el scroll horizontal
+          */
+          .anticipo-panel .anticipo .anticipo-vista iframe {
+            max-width: 90%;
+            margin: 5px; } 
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    /*Propiedades de clases anticipo */
+  .anticipo-panel {
+    display: flex;
+    flex-direction: row; }
+    .anticipo-panel .anticipo {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 20% 70% 10%;
+      grid-template-areas: "anticipo titulo"
+ "anticipo descripcion"
+ "anticipo boton"; }
+      .anticipo-panel .anticipo .anticipo-titulo {
+        grid-area: titulo; }
+      .anticipo-panel .anticipo .anticipo-vista {
+        grid-area: anticipo; }
+      .anticipo-panel .anticipo .anticipo-descripcion {
+        grid-area: descripcion; }
+      .anticipo-panel .anticipo .anticipo-boton {
+        grid-area: boton; }
+    }
+
+    

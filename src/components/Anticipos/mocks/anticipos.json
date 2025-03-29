@@ -1,0 +1,35 @@
+{
+    "status": "success",
+    "payload": {
+        "anticipos": [
+            {
+                "id": 1,
+                "titulo": "Video destacado",
+                "descripcion": "Empezá a reirte viendo las últimas barbaridades que estoy diciendo en el mundo del Stand Up. Acá tenés un ejemplo. ¿Te gustó? ¿Querés más? Apretá el botón \"Quiero más\" bajo tu responsabilidad, claro",
+                "tipoVista": "video",
+                "origenVista": "https://www.youtube.com/embed/In6xZfdsOAc",
+                "tipoPath": "interno",
+                "path": "/videos"
+            },
+            {
+                "id": 2,
+                "titulo": "Novedades",
+                "descripcion": "Se viene una nueva fecha de \"Coca vs Coca\", mi nuevo unipersonal de Stand Up.  ¿Curioso?  Apretá el botón \"Quiero más\" y enterate de todo",
+                "tipoVista": "imagen",
+                "origenVista": "img/cocavscoca.jpg",
+                "tipoPath": "interno",
+                "path": "/agenda"
+            },
+            {
+                "id": 3,
+                "titulo": "ImproConcert",
+                "descripcion": "Enterate de todas las novedades de ImproConcert, la compañía de Improvisación Teatral que dirijo.  ¿Curioso?  Apretá el botón \"Quiero más\" y enterate de todo",
+                "tipoVista": "imagen",
+                "origenVista": "https://improconcert.com/images/general/pablo_coca.png",
+                "tipoPath": "externo",
+                "path": "https://improconcert.com/"
+            }
+  
+        ]
+    }
+}
