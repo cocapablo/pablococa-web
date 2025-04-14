@@ -24,6 +24,7 @@ export function BarraDeNavegacion() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/">Inicio</NavLink>
+            <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/quiensoy">Quien Soy</NavLink>
             <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/about">Acerca de</NavLink>            
             {/* <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/categoria/capas">Capas</NavLink>
             

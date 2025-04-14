@@ -1,0 +1,40 @@
+/* Estilos de section */
+/*Mobile*/
+.tarjeta-panel {
+    display: flex;
+    flex-direction: column; }
+    .tarjeta-panel h2 {
+      text-align: center;
+      margin: 1rem; }
+    .tarjeta-panel .tarjeta, .tarjeta-panel .tarjeta-extra {
+      background-color: #F4F1DE;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 2%;
+      color: black; }
+      .tarjeta-panel .tarjeta h3, .tarjeta-panel .tarjeta-extra h3 {
+        margin-bottom: 1rem;
+        color: black; }
+    .tarjeta-panel .tarjeta-extra {
+      display: none; } /* Ocultar tarjeta-extra */
+
+/*Tablet*/
+@media screen and (min-width: 600px) {
+    .tarjeta-panel {
+      flex-direction: row; } }
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    .tarjeta-panel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "titulo titulo titulo"; }
+        .tarjeta-panel h2 {
+          grid-area: titulo; }
+        .tarjeta-panel .tarjeta, .tarjeta-panel .tarjeta-extra {
+          transition: 1s; }
+        .tarjeta-panel .tarjeta-extra {
+          transition: 1s;
+          display: block; }
+        .tarjeta-panel .tarjeta:hover, .tarjeta-panel .tarjeta-extra:hover, .tarjeta-panel .tarjeta-extra:hover {
+          transform: scale(1.1, 1.1); } }

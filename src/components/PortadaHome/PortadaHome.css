@@ -6,3 +6,5 @@ main {
     main p {
       font-size: 25px;
       margin-bottom: 20px; }
+    main img {
+        max-width: 90%; }

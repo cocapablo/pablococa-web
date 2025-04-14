@@ -1,0 +1,43 @@
+main {
+    text-align: center;
+    font-family: 'Playfair Display', serif; }
+    main h1 {
+      margin-bottom: 20px; }
+    main p {
+      font-size: 25px;
+      margin-bottom: 20px; }
+    main img {
+        max-width: 90%; }
+
+/* Clase .img-descripcion */
+.img-descripcion {
+    display: flex;
+    flex-direction: column; }
+    .img-descripcion p {
+      font-size: 1rem;
+      padding: 1rem;
+      margin: 1rem; }
+    .img-descripcion img {
+        max-width: 90%;
+        height: auto; }
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .full-pantalla {
+        min-height: 80vh; }
+      /* Propiedades de clase .img-descripcion*/
+      .img-descripcion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "imagen descripcion";
+        align-items: center; }
+        .img-descripcion img {
+          grid-area: imagen;
+          margin-bottom: 0.2rem;
+          transition: 1s; }
+        .img-descripcion img:hover {
+          transform: scale(1.1, 1.1); }
+        .img-descripcion p {
+          grid-area: descripcion; }
+    }

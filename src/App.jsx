@@ -19,6 +19,7 @@ import {Home as HomePage} from "./components/paginas/Home/Home.jsx";
 import AboutPage from "./components/PabloRouter/pages/AboutPage.jsx";
 import Page404 from './components/PabloRouter/pages/Page404.jsx';
 import SearchPage from './components/PabloRouter/pages/SearchPage.jsx'; 
+import QuienSoy from './components/paginas/Home/QuienSoy.jsx';
 
 
 const users = [
@@ -47,6 +48,7 @@ function App() {
         <Routes>
                 
           <Route path='/' element= {<HomePage></HomePage> } ></Route>
+          <Route path='/quiensoy' element= {<QuienSoy></QuienSoy> } ></Route>
           <Route path='/about' element= {<AboutPage routeParams={{lang: "es"}}></AboutPage> } ></Route> 
           {/* <Route path='/productos' element= {<ItemListContainer greeting="Bienvenidos Superhéroes del Universo" /> } ></Route>
           <Route path='/producto/:pid' element= {<ItemDetailContainer /> } ></Route>
