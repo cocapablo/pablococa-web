@@ -1,13 +1,4 @@
-main {
-    text-align: center;
-    font-family: 'Playfair Display', serif; }
-    main h1 {
-      margin-bottom: 20px; }
-    main p {
-      font-size: 25px;
-      margin-bottom: 20px; }
-    main img {
-        max-width: 90%; }
+
 
 /* Clase .img-descripcion */
 .img-descripcion {

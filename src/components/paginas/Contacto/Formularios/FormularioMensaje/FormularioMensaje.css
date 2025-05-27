@@ -1,0 +1,18 @@
+.formulario {
+    background-color: #F4F1DE;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 2%;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 5px 10px 5px #3D405B;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center; }
+    .formulario .form-label-input-panel {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      row-gap: 5px; }
+    .formulario textarea {
+      max-width: 90%; }

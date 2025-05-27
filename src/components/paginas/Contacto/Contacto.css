@@ -1,0 +1,25 @@
+/* Estilos de la sección "Contacto" */
+
+
+
+
+    
+    
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    /* Propiedades de .contacto */
+  .contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "titulo titulo"
+ "formulario comunicate"; }
+    .contacto h1 {
+      grid-area: titulo; }
+    .contacto .comunicate {
+      grid-area: comunicate; }
+    .contacto .mandame-form {
+      grid-area: formulario; }
+    }
+        

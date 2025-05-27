@@ -3,11 +3,11 @@ import "./PortadaQuienSoy.css";
 
 export function PortadaQuienSoy() {
   return (
-    <main class="full-pantalla">
+    <main>
         <h1>
             Quién es Pablo Coca 
         </h1>
-         <div class="img-descripcion">
+         <div className="img-descripcion">
             <div>
                 <img src="img/foto5.jpg" alt="Foto de Pablo Coca sonriendo"></img>
 

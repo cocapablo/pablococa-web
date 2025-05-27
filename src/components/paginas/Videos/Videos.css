@@ -1,0 +1,17 @@
+body {
+    background-color: whitesmoke; }
+
+.videos {
+    text-align: center;
+    font-family: 'Playfair Display', serif; }
+    .videos h1 {
+            margin-bottom: 20px; }
+    .videos p {
+            font-size: 25px;
+            margin-bottom: 20px; }
+    .videos img {
+            max-width: 90%; }
+
+    .videos iframe {
+        max-width: 90%;
+        margin: 5px; } 

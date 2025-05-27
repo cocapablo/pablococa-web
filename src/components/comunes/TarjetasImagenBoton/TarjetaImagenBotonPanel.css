@@ -1,0 +1,76 @@
+/* Clases tarjetaimagenboton */
+/* Mobile */
+.tarjetaimagenboton-panel {
+    display: flex;
+    flex-direction: column; }
+    .tarjetaimagenboton-panel .tarjetaimagenboton {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 2%;
+      box-shadow: 5px 10px 5px #3D405B;
+      text-align: center;
+      background-color: #F2CC8F;
+      color: black; }
+      .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-titulo {
+        font-size: 2rem;
+        color: black; }
+      .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-descripcion {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 1rem;
+        color: black; }
+      .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-boton {
+        display: inline-block;
+        margin: auto;
+        padding: 0.3rem;
+        background: linear-gradient(#c5e7d6, #81B29A);
+        color: white;
+        font-size: 1.1rem;
+        border: 2px solid black;
+        border-radius: 5%; }
+      .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-boton:hover {
+        transform: scale(1.1, 1.1); }
+
+        .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-boton a {
+            text-decoration: none;
+            color: black; }
+          
+          /* tamaño de las imagenes*
+          Les coloco un porcentaje para evitar el scroll horizontal
+          */
+          .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-vista img {
+            max-width: 90%; }
+          
+          /* tamaño de los iframes*
+          Les coloco un porcentaje para evitar el scroll horizontal
+          */
+          .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-vista iframe {
+            max-width: 90%;
+            margin: 5px; } 
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    /*Propiedades de clases tarjetaimagenboton */
+  .tarjetaimagenboton-panel {
+    display: flex;
+    flex-direction: row; }
+    .tarjetaimagenboton-panel .tarjetaimagenboton {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 20% 70% 10%;
+      grid-template-areas: "tarjetaimagenboton titulo"
+ "tarjetaimagenboton descripcion"
+ "tarjetaimagenboton boton"; }
+      .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-titulo {
+        grid-area: titulo; }
+      .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-vista {
+        grid-area: tarjetaimagenboton; }
+      .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-descripcion {
+        grid-area: descripcion; }
+      .tarjetaimagenboton-panel .tarjetaimagenboton .tarjetaimagenboton-boton {
+        grid-area: boton; }
+    }
+
+    

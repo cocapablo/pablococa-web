@@ -1,7 +1,6 @@
 import React from 'react'
-import "./Anticipos.css";
-import { Anticipo } from './Anticipo.jsx';
-import { TIPO_PATH_ANTICIPO, TIPO_VISTA_ANTICIPO } from './Anticipo.jsx';
+
+import { TarjetaImagenBotonPanel } from '../comunes/TarjetasImagenBoton/TarjetaImagenBotonPanel.jsx';
 import { useAnticipos } from './hooks/useAnticipos.js';
 
 export function Anticipos() {
@@ -10,7 +9,7 @@ export function Anticipos() {
     //Error
     if (error) {
         return (
-            <section className="anticipo-panel">   
+            <section className="tarjetaimagenboton-panel">   
                 <h2>Error al cargar los anticipos</h2>
             </section>
         )
@@ -19,14 +18,6 @@ export function Anticipos() {
     console.log(anticipos);
 
     return (
-    <section className="anticipo-panel">
-        {
-            anticipos.map(anticipo => {
-                return <Anticipo key={anticipo.id} titulo={anticipo.titulo} descripcion={anticipo.descripcion} tipoVista={anticipo.tipoVista} origenVista={anticipo.origenVista} tipoPath={anticipo.tipoPath} path={anticipo.path}></Anticipo>
-            })
-        }
-
-        
-    </section>
-  )
+        <TarjetaImagenBotonPanel datosTarjetas={anticipos}></TarjetaImagenBotonPanel>
+    )
 }
