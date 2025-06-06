@@ -1,0 +1,14 @@
+body {
+    background-color: whitesmoke; }
+
+.agenda {
+    text-align: center;
+    font-family: 'Playfair Display', serif; 
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .agenda .full-pantalla {
+        min-height: 80vh; 
+    }
+}

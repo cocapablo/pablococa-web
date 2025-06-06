@@ -24,6 +24,7 @@ import { Contacto } from './components/paginas/Contacto/Contacto.jsx';
 
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { Videos } from './components/paginas/Videos/Videos.jsx';
+import { Agenda } from './components/paginas/Agenda/Agenda.jsx';
 
 
 const users = [
@@ -54,6 +55,7 @@ function App() {
           <Route path='/' element= {<HomePage></HomePage> } ></Route>
           <Route path='/quiensoy' element= {<QuienSoy></QuienSoy> } ></Route>
           <Route path='/videos' element= {<Videos></Videos> } ></Route>
+          <Route path='/agenda' element= {<Agenda></Agenda> } ></Route>
           <Route path='/contacto' element= {<Contacto></Contacto> } ></Route>
           <Route path='/about' element= {<AboutPage routeParams={{lang: "es"}}></AboutPage> } ></Route> 
           {/* <Route path='/productos' element= {<ItemListContainer greeting="Bienvenidos Superhéroes del Universo" /> } ></Route>

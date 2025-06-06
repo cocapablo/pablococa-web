@@ -1,0 +1,29 @@
+{
+    "status": "success",
+    "payload": {
+        "actividades": [
+            {
+                "id": 1,
+                "titulo": "Coca vs Coca",
+                "descripcion": "COCA VS COCA - Stand Up - Un dúo unipersonal de Pablo Coca. Este espectáculo es la solución que encontró Pablo Coca al permanente diálogo entre sus subpersonalidades en un mismo cuerpo. Lo que se conoce popularmente como hablar solo por la calle",
+                "srcImagen": "img/cocavscoca.jpg",
+                "altImagen": "Flyer del show Coca vs Coca"
+            },
+            {
+                "id": 2,
+                "titulo": "Muñopedro",
+                "descripcion": "MUÑOPEDRO es un pueblo de Segovia, España. Tiene una población de 300 humanos y 900 ovejas. Lo conocí hace 3 años. La pandemia me sorprendió en plena gira por España. Cerraron fronteras y qudé varado ahí. El 23 de Mayo de 2020 fuí repatriado a Argentina. Justo el mismo día que España reabría sus bares. Todo lo que me quedé con ganas de decir en esos bares de Muñopedro lo digo en este espectáculo",
+                "srcImagen": "img/funcion1.jpg",
+                "altImagen": "Flyer del show Muñopedro"
+            },
+            {
+                "id": 3,
+                "titulo": "ImproConcert",
+                "descripcion": "IMPROCONCERT es un show de humor e improvisaciones con dinámica Café Concert y la participación activa del público. En lugar de tener escrito nuestro guión lo improvisamos en base a una charla con los propios espectadores y a consignas que brindan ellos mismos en el momento. Creado e interpretado por las inquietas mentes creativas de la compañía ImproConcert que desde hace 15 años solo piensan en nuevas formas de que tu vejiga estalle de risa. Ellos Improvisan, Vos los desafías, Todos ríen",
+                "srcImagen": "img/funcion2.jpg",
+                "altImagen": "Flyer del show ImproConcert"
+                
+            }
+        ]
+    }
+}
