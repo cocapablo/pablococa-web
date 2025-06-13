@@ -5,7 +5,7 @@ import { Opiniones } from '../../Opiniones/Opiniones.jsx';
 
 export function QuienSoy() {
   return (
-    <div className='fullpantalla'>
+    <div>
       <PortadaQuienSoy></PortadaQuienSoy>
 
       <Opiniones></Opiniones>

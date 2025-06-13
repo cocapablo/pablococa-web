@@ -1,0 +1,35 @@
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #81B29A;
+  color: black;
+  font-family: 'Playfair Display', serif; 
+  display: flex;
+  flex-direction: column; 
+}
+  
+footer .logo-footer {
+    display: none; 
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "logo derechos redes"; 
+    }
+    footer .logo-footer {
+      grid-area: logo;
+      display: flex; 
+    }
+    footer .derechosreservados {
+      grid-area: derechos;
+      display: flex;
+      flex-direction: column-reverse; 
+    }
+    footer .redessociales {
+      grid-area: redes; 
+    } 
+}

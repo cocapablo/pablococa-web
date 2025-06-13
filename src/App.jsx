@@ -25,6 +25,7 @@ import { Contacto } from './components/paginas/Contacto/Contacto.jsx';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { Videos } from './components/paginas/Videos/Videos.jsx';
 import { Agenda } from './components/paginas/Agenda/Agenda.jsx';
+import { Footer } from './components/Footer/Footer.jsx';
 
 
 const users = [
@@ -57,14 +58,15 @@ function App() {
           <Route path='/videos' element= {<Videos></Videos> } ></Route>
           <Route path='/agenda' element= {<Agenda></Agenda> } ></Route>
           <Route path='/contacto' element= {<Contacto></Contacto> } ></Route>
-          <Route path='/about' element= {<AboutPage routeParams={{lang: "es"}}></AboutPage> } ></Route> 
-          {/* <Route path='/productos' element= {<ItemListContainer greeting="Bienvenidos Superhéroes del Universo" /> } ></Route>
+          {/* <Route path='/about' element= {<AboutPage routeParams={{lang: "es"}}></AboutPage> } ></Route> 
+          <Route path='/productos' element= {<ItemListContainer greeting="Bienvenidos Superhéroes del Universo" /> } ></Route>
           <Route path='/producto/:pid' element= {<ItemDetailContainer /> } ></Route>
           <Route path='/categoria/:cid' element= {<ItemListContainer greeting="Bienvenidos Superhéroes del Universo" /> } ></Route>
           <Route path='/cart' element= {<CartContainer /> } ></Route>
           <Route path='*' element= {<Navigate to={"/"}/> } ></Route>   */}   
           
         </Routes>
+        <Footer></Footer>
       </Router>
 
       <FloatingWhatsApp

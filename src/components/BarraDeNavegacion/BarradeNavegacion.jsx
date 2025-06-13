@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link, NavLink } from "react-router-dom";
+import './BarraDeNavegacion.css';
 
 function CartWidget() { //Esto hay que cambiarlo después
   return (  
@@ -12,7 +13,8 @@ function CartWidget() { //Esto hay que cambiarlo después
 
 export function BarraDeNavegacion() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    
+  <Navbar collapseOnSelect expand="lg" className="barra-de-navegacion">
       <Container fluid>
         <Navbar.Brand >
           <Link className="btn" to="/">
@@ -28,8 +30,8 @@ export function BarraDeNavegacion() {
             <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/videos">Videos</NavLink>
             <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/agenda">Agenda</NavLink>
             <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/contacto">Contacto</NavLink>
-            <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/about">Acerca de</NavLink>            
-            {/* <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/categoria/capas">Capas</NavLink>
+            {/* <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/about">Acerca de</NavLink>            
+            <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/categoria/capas">Capas</NavLink>
             
             <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/categoria/vehiculos">Vehículos</NavLink>
             <NavLink className={({isActive}) => isActive ? "btn btn-dark" : "btn"} to="/categoria/guaridas">Guaridas</NavLink>

@@ -44,7 +44,7 @@ function fnErrorSwal(error) {
 
 export function Contacto() {
   return (
-    <main className='fullpantalla'>
+    <main>
         <div class="contacto">
             <h1>
                 Comunicate conmigo 

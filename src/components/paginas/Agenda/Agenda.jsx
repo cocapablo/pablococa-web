@@ -4,7 +4,7 @@ import { Actividades } from '../../Actividades/Actividades';
 
 export function Agenda() {
   return (
-    <main className='agenda fullpantalla'>
+    <main className='agenda'>
         <h1>
             Enterate de mis próximas presentaciones 
         </h1>
