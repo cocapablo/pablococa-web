@@ -5,52 +5,62 @@
             {
                 "id": 1,
                 "titulo": "Información posta",
-                "descripcion": "Todas mis actividades artísticas estarán en esta web. Encontrarás información sobre mis proyectos, mis trabajos y mis expectativas. Además, podrás contactarme para cualquier consulta o propuesta de trabajo."
+                "descripcion": "Todas mis actividades artísticas estarán en esta web. Encontrarás información sobre mis proyectos, mis trabajos y mis expectativas. Además, podrás contactarme para cualquier consulta o propuesta de trabajo.",
+                "prioridad": 1
             },
             {
                 "id": 2,
                 "titulo": "Videos",
-                "descripcion": "Mirá mi selección personal de videos. También podés entrar a mi Canal de YouTube y ver mucho más contenido. No te olvides de suscribirte para recibir notificaciones de nuevos videos."
+                "descripcion": "Mirá mi selección personal de videos. También podés entrar a mi Canal de YouTube y ver mucho más contenido. No te olvides de suscribirte para recibir notificaciones de nuevos videos.",
+                "prioridad": 1
             },
             {
                 "id": 3,
                 "titulo": "Streaming",
-                "descripcion": "Toda mis programas por streaming en Twitch, YouTube, Facebook e Instagram. No te pierdas mis transmisiones en vivo y disfrutá de un contenido exclusivo. ¡Suscribite para recibir notificaciones de nuevos streams!"
+                "descripcion": "Toda mis programas por streaming en Twitch, YouTube, Facebook e Instagram. No te pierdas mis transmisiones en vivo y disfrutá de un contenido exclusivo. ¡Suscribite para recibir notificaciones de nuevos streams!",
+                "prioridad": 1
             },
             {
                 "id": 4,
                 "titulo": "Malas lenguas",
-                "descripcion": "Los chimentos más escandalosos sobre mí están acá. Vos decidí si son falsos o no. ¡No te pierdas ni uno!"
+                "descripcion": "Los chimentos más escandalosos sobre mí están acá. Vos decidí si son falsos o no. ¡No te pierdas ni uno!",
+                "prioridad": 2
             },
             {
                 "id": 5,
                 "titulo": "Fotos",
-                "descripcion": "Mirá mi galería de fotos. Encontrarás fotos de mis proyectos, mis trabajos y mis expectativas. Además, podrás descargarlas para tenerlas siempre con vos."
+                "descripcion": "Mirá mi galería de fotos. Encontrarás fotos de mis proyectos, mis trabajos y mis expectativas. Además, podrás descargarlas para tenerlas siempre con vos.",
+                "prioridad": 2
             },
             {
                 "id": 6,
                 "titulo": "Contacto",
-                "descripcion": "¿Querés contactarme? ¡Hacelo! Estoy disponible para cualquier consulta o propuesta de trabajo. ¡No dudes en escribirme!"
+                "descripcion": "¿Querés contactarme? ¡Hacelo! Estoy disponible para cualquier consulta o propuesta de trabajo. ¡No dudes en escribirme!",
+                "prioridad": 2
             },
             {
                 "id": 7,
                 "titulo": "Redes",
-                "descripcion": "Seguime en mis redes sociales. Encontrarás información sobre mis proyectos, mis trabajos y mis expectativas. Además, podrás contactarme para cualquier consulta o propuesta de trabajo."
+                "descripcion": "Seguime en mis redes sociales. Encontrarás información sobre mis proyectos, mis trabajos y mis expectativas. Además, podrás contactarme para cualquier consulta o propuesta de trabajo.",
+                "prioridad": 2
             },
             {
                 "id": 8,
                 "titulo": "Momentos gloriosos",
-                "descripcion": "Una recopilación de historias en dónde la autoestima de Pablo Coca llegó a límites obscenos"
+                "descripcion": "Una recopilación de historias en dónde la autoestima de Pablo Coca llegó a límites obscenos",
+                "prioridad": 2
             },
             {
                 "id": 9,
                 "titulo": "Momentos lamentables",
-                "descripcion": "Una recopilación de historias en dónde la imágen de Pablo Coca se fué por el inodoro"
+                "descripcion": "Una recopilación de historias en dónde la imágen de Pablo Coca se fué por el inodoro",
+                "prioridad": 2
             },
             {
                 "id": 10,
                 "titulo": "Momentos de mierda",
-                "descripcion": "Una recopilación de historias en dónde la vida de Pablo Coca se fué al carajo"
+                "descripcion": "Una recopilación de historias en dónde la vida de Pablo Coca se fué al carajo",
+                "prioridad": 2
             }
         ]
     }

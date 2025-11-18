@@ -1,11 +1,15 @@
 // Objective: export a custom hook to fetch videos from the API
 // and use it in the VideosPanel component.
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { VideosContext } from '../contexts/videosContext.jsx';
 import { getVideos } from '../services/videos.js';
 
 export function useVideos() {
-    const [videos, setVideos] = useState([]);
+    const {videos, setVideos} = useContext(VideosContext);
+    console.log('Videos del Context', videos);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
+    
 
     useEffect(() => {
         const fetchVideos = async () => {
@@ -20,8 +24,24 @@ export function useVideos() {
             }
         };
 
+        // Chequea si ya hay videos cargados
+        // Si ya hay videos, no hace falta volver a cargarlos
+        if (videos.length > 0) {
+            setLoading(false);
+            return;
+        }
+
+        // No hay videos, las cargo
+        /* setTimeout(() => {
+            fetchVideos();
+            setLoading(false);
+        }, 3000); // Simulate a delay for loading state */
+        
+        
         fetchVideos();
+        setLoading(false); 
+        
     }, []);
 
-    return { videos, error };
+    return { videos, loading, error };
 }

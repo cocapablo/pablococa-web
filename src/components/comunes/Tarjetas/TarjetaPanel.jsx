@@ -8,8 +8,8 @@ export function TarjetaPanel({titulo = "", datosTarjetas = []}) {
             {titulo && <h2>{titulo}</h2>}
             
             {   
-                datosTarjetas.map(datoTarjeta => {
-                    if (datoTarjeta.id <= 3){
+                datosTarjetas.map((datoTarjeta) => {
+                    if (datoTarjeta.prioridad && datoTarjeta.prioridad === 1) {
                         return <Tarjeta key={datoTarjeta.id} titulo={datoTarjeta.titulo} descripcion={datoTarjeta.descripcion} tipo={TIPO_TARJETA.NORMAL}></Tarjeta>
                     } else {
                         return <Tarjeta key={datoTarjeta.id} titulo={datoTarjeta.titulo} descripcion={datoTarjeta.descripcion} tipo={TIPO_TARJETA.EXTRA}></Tarjeta>

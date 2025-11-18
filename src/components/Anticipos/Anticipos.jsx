@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Modal } from 'react-bootstrap';
 
 import { TarjetaImagenBotonPanel } from '../comunes/TarjetasImagenBoton/TarjetaImagenBotonPanel.jsx';
 import { useAnticipos } from './hooks/useAnticipos.js';
 
 export function Anticipos() {
-    const { anticipos, error } = useAnticipos();
+    const { anticipos, loading, error } = useAnticipos();
     
     //Error
     if (error) {
@@ -18,6 +19,17 @@ export function Anticipos() {
     console.log(anticipos);
 
     return (
-        <TarjetaImagenBotonPanel datosTarjetas={anticipos}></TarjetaImagenBotonPanel>
+        <>
+            <Modal show={loading} centered={true} onHide={() => {}}>
+                <Modal.Header>
+                    <Modal.Title>Anticipos</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>Cargando los anticipos de las próximas actividades.</p>
+                </Modal.Body>
+            </Modal>
+        
+            {!loading && <TarjetaImagenBotonPanel titulo="Anticipos" datosTarjetas={anticipos}></TarjetaImagenBotonPanel>}
+        </>
     )
 }

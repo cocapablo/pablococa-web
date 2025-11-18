@@ -4,12 +4,15 @@ import { Expectativas } from '../../Expectativas/Expectativas.jsx';
 import { Anticipos } from '../../Anticipos/Anticipos.jsx';
 
 
+
 export function Home() {
   return (
     <>
       <PortadaHome></PortadaHome>
 
+      
       <Expectativas></Expectativas>
+      
 
       <Anticipos></Anticipos>
     </>

@@ -7,7 +7,7 @@ import swal from 'sweetalert';
 
 const apiURL = "https://entrega1-backend-production.up.railway.app/api/pedidosdepresupuesto"; // URL de la API
 
-const apiURL2 = "http://localhost:8080/api/pedidosdepresupuesto"; // URL de la API
+const apiURLLocal = "http://localhost:8080/api/pedidosdepresupuesto"; // URL de la API
 
 function fnExitoSwal(datos) {
   if (datos.status === "success") {
@@ -50,7 +50,7 @@ export function Contacto() {
                 Comunicate conmigo 
             </h1>
             <Comunicate></Comunicate>
-            <FormularioEventos apiURL={apiURL} fnExito={fnExitoSwal} fnError={fnErrorSwal}></FormularioEventos>
+            <FormularioEventos apiURL={apiURLLocal} fnExito={fnExitoSwal} fnError={fnErrorSwal}></FormularioEventos>
         </div>
     </main>
   )

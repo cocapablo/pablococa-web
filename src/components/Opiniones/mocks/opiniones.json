@@ -5,32 +5,38 @@
             {
                 "id": 1,
                 "titulo": "Diego de Banfield",
-                "descripcion": "Lo mejor que me pasó en la vida. Después de reir por horas con él fuí hospitalizado"
+                "descripcion": "Lo mejor que me pasó en la vida. Después de reir por horas con él fuí hospitalizado",
+                "prioridad": 1
             },
             {
                 "id": 2,
                 "titulo": "Carmen de Calamuchita",
-                "descripcion": "Pablo Coca es un hereje. Me persigné durante todo el show y no me sirvió de nada. Me reí tanto que me olvidé de Dios"
+                "descripcion": "Pablo Coca es un hereje. Me persigné durante todo el show y no me sirvió de nada. Me reí tanto que me olvidé de Dios",
+                "prioridad": 1
             },
             {
                 "id": 3,
                 "titulo": "Mariela - Recién separada",
-                "descripcion": "Hermoso comediante. ¿Estará soltero?. Jiji. Me encantó su show. Me reí tanto que me olvidé de mi ex marido. ¡Gracias Pablo Coca!"
+                "descripcion": "Hermoso comediante. ¿Estará soltero?. Jiji. Me encantó su show. Me reí tanto que me olvidé de mi ex marido. ¡Gracias Pablo Coca!",
+                "prioridad": 1
             },
             {
                 "id": 4,
                 "titulo": "Prefiero no dar mi nombre",
-                "descripcion": "Lo seguí durante cuatro días seguidos y siempre usó la misma mochila. No sé si es un genio o un loco. Pero me reí tanto que me olvidé de mi vida. ¡Gracias Pablo Coca!"
+                "descripcion": "Lo seguí durante cuatro días seguidos y siempre usó la misma mochila. No sé si es un genio o un loco. Pero me reí tanto que me olvidé de mi vida. ¡Gracias Pablo Coca!",
+                "prioridad": 2
             },
             {
                 "id": 5,
                 "titulo": "José de San Martín",
-                "descripcion": "Si lo hubiese conocido antes, me dedicaba al Stand Up y no cruzaba los Andes. ¡Gracias Pablo Coca!"
+                "descripcion": "Si lo hubiese conocido antes, me dedicaba al Stand Up y no cruzaba los Andes. ¡Gracias Pablo Coca!",
+                "prioridad": 2
             },
             {
                 "id": 6,
                 "titulo": "Martirio - Monja de clausura",
-                "descripcion": "La mitad de mi día tengo pensamientos prohibidos con él. La otra mitad rezo para que Dios me perdone"
+                "descripcion": "La mitad de mi día tengo pensamientos prohibidos con él. La otra mitad rezo para que Dios me perdone",
+                "prioridad": 2
             }
         ]
     }

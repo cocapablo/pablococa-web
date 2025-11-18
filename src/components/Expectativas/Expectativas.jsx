@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Modal } from 'react-bootstrap';
 
 
 // Objective: import the custom hook useExpectativas and use it to fetch the expectativas
@@ -7,7 +8,7 @@ import { useExpectativas } from './hooks/useExpectativas.js';
 import { TarjetaPanel } from '../comunes/Tarjetas/TarjetaPanel.jsx';
 
 export function Expectativas() {
-    const { expectativas, error } = useExpectativas();
+    const { expectativas, loading, error } = useExpectativas();
     
     //Error
     if (error) {
@@ -23,7 +24,19 @@ export function Expectativas() {
 
   // Exitoso  
   return (
+    <>
+        <Modal show={loading} centered={true} onHide={() => {}}>
+            <Modal.Header>
+                <Modal.Title>¿Que puedo esperar de esta web?</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <p>Cargando todo lo que podés encontrar al visitar esta web.</p>
+            </Modal.Body>
+
+        </Modal>
     
-     <TarjetaPanel titulo="¿Qué puedo esperar de esta web?" datosTarjetas={expectativas} ></TarjetaPanel>
+        {!loading && <TarjetaPanel titulo="¿Qué puedo esperar de esta web?" datosTarjetas={expectativas} ></TarjetaPanel>}
+
+     </>
   )
 }

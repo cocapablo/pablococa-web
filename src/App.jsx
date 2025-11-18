@@ -27,6 +27,11 @@ import { Videos } from './components/paginas/Videos/Videos.jsx';
 import { Agenda } from './components/paginas/Agenda/Agenda.jsx';
 import { Footer } from './components/Footer/Footer.jsx';
 
+import { ExpectativasContextProvider } from './components/Expectativas/contexts/expectativasContext.jsx';
+import { AnticiposContextProvider } from './components/Anticipos/contexts/anticiposContext.jsx';
+import { OpinionesContextProvider } from './components/Opiniones/contexts/opinionesContext.jsx';
+import { VideosContextProvider } from './components/Videos/contexts/videosContext.jsx';
+
 
 const users = [
   {
@@ -50,23 +55,31 @@ function App() {
   return (
     <>
       <Router>
-        <BarraDeNavegacion></BarraDeNavegacion>  
-        <Routes>
+        <ExpectativasContextProvider>
+          <AnticiposContextProvider>
+          <OpinionesContextProvider>
+            <VideosContextProvider>
+              <BarraDeNavegacion></BarraDeNavegacion>  
+              <Routes>
+                      
+                <Route path='/' element= {<HomePage></HomePage> } ></Route>
+                <Route path='/quiensoy' element= {<QuienSoy></QuienSoy> } ></Route>
+                <Route path='/videos' element= {<Videos></Videos> } ></Route>
+                <Route path='/agenda' element= {<Agenda></Agenda> } ></Route>
+                <Route path='/contacto' element= {<Contacto></Contacto> } ></Route>
+                {/* <Route path='/about' element= {<AboutPage routeParams={{lang: "es"}}></AboutPage> } ></Route> 
+                <Route path='/productos' element= {<ItemListContainer greeting="Bienvenidos Superhéroes del Universo" /> } ></Route>
+                <Route path='/producto/:pid' element= {<ItemDetailContainer /> } ></Route>
+                <Route path='/categoria/:cid' element= {<ItemListContainer greeting="Bienvenidos Superhéroes del Universo" /> } ></Route>
+                <Route path='/cart' element= {<CartContainer /> } ></Route>
+                <Route path='*' element= {<Navigate to={"/"}/> } ></Route>   */}   
                 
-          <Route path='/' element= {<HomePage></HomePage> } ></Route>
-          <Route path='/quiensoy' element= {<QuienSoy></QuienSoy> } ></Route>
-          <Route path='/videos' element= {<Videos></Videos> } ></Route>
-          <Route path='/agenda' element= {<Agenda></Agenda> } ></Route>
-          <Route path='/contacto' element= {<Contacto></Contacto> } ></Route>
-          {/* <Route path='/about' element= {<AboutPage routeParams={{lang: "es"}}></AboutPage> } ></Route> 
-          <Route path='/productos' element= {<ItemListContainer greeting="Bienvenidos Superhéroes del Universo" /> } ></Route>
-          <Route path='/producto/:pid' element= {<ItemDetailContainer /> } ></Route>
-          <Route path='/categoria/:cid' element= {<ItemListContainer greeting="Bienvenidos Superhéroes del Universo" /> } ></Route>
-          <Route path='/cart' element= {<CartContainer /> } ></Route>
-          <Route path='*' element= {<Navigate to={"/"}/> } ></Route>   */}   
-          
-        </Routes>
-        <Footer></Footer>
+              </Routes>
+              <Footer></Footer>
+            </VideosContextProvider>
+            </OpinionesContextProvider>
+          </AnticiposContextProvider>
+        </ExpectativasContextProvider>
       </Router>
 
       <FloatingWhatsApp
